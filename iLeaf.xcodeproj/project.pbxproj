@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		240B33C521888F7F00CB0B44 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B33C421888F7F00CB0B44 /* AppDelegate.swift */; };
+		240B33C721888F7F00CB0B44 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B33C621888F7F00CB0B44 /* ViewController.swift */; };
+		240B33CA21888F7F00CB0B44 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240B33C821888F7F00CB0B44 /* Main.storyboard */; };
+		240B33CC21888F7F00CB0B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 240B33CB21888F7F00CB0B44 /* Assets.xcassets */; };
+		240B33CF21888F7F00CB0B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 240B33CD21888F7F00CB0B44 /* LaunchScreen.storyboard */; };
+		240B33DD21888FE600CB0B44 /* PacketTunnelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B33DC21888FE600CB0B44 /* PacketTunnelProvider.swift */; };
+		240B33E221888FE600CB0B44 /* PacketTunnel.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 240B33DA21888FE600CB0B44 /* PacketTunnel.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		240B33E82188907600CB0B44 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B33E72188907600CB0B44 /* VPNManager.swift */; };
+		240B33EB218897A400CB0B44 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B33EA218897A400CB0B44 /* NetworkExtension.framework */; };
+		240B33EC2188980900CB0B44 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B33EA218897A400CB0B44 /* NetworkExtension.framework */; };
+		243B9E0725469C7A0001F98B /* libleaf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 243B9E0625469C7A0001F98B /* libleaf.a */; };
+		243B9E192546A97F0001F98B /* site.dat in Resources */ = {isa = PBXBuildFile; fileRef = 243B9E182546A97F0001F98B /* site.dat */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		240B33E021888FE600CB0B44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 240B33B921888F7F00CB0B44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 240B33D921888FE600CB0B44;
+			remoteInfo = PacketTunnel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		240B33E621888FE600CB0B44 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				240B33E221888FE600CB0B44 /* PacketTunnel.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240B34252189A99500CB0B44 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		240B33C121888F7F00CB0B44 /* iLeaf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iLeaf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		240B33C421888F7F00CB0B44 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		240B33C621888F7F00CB0B44 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		240B33C921888F7F00CB0B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		240B33CB21888F7F00CB0B44 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		240B33CE21888F7F00CB0B44 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		240B33D021888F7F00CB0B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		240B33DA21888FE600CB0B44 /* PacketTunnel.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PacketTunnel.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		240B33DC21888FE600CB0B44 /* PacketTunnelProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketTunnelProvider.swift; sourceTree = "<group>"; };
+		240B33DE21888FE600CB0B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		240B33DF21888FE600CB0B44 /* PacketTunnel.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PacketTunnel.entitlements; sourceTree = "<group>"; };
+		240B33E72188907600CB0B44 /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
+		240B33EA218897A400CB0B44 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
+		240B33ED2188980900CB0B44 /* iLeaf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iLeaf.entitlements; sourceTree = "<group>"; };
+		243B9E0525469C7A0001F98B /* leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leaf.h; sourceTree = "<group>"; };
+		243B9E0625469C7A0001F98B /* libleaf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleaf.a; sourceTree = "<group>"; };
+		243B9E182546A97F0001F98B /* site.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = site.dat; sourceTree = "<group>"; };
+		24B9C1FF24DEDF270057293C /* Leaf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Leaf-Bridging-Header.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		240B33BE21888F7F00CB0B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240B33EC2188980900CB0B44 /* NetworkExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240B33D721888FE600CB0B44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240B33EB218897A400CB0B44 /* NetworkExtension.framework in Frameworks */,
+				243B9E0725469C7A0001F98B /* libleaf.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		240B33B821888F7F00CB0B44 = {
+			isa = PBXGroup;
+			children = (
+				240B33C321888F7F00CB0B44 /* iLeaf */,
+				240B33DB21888FE600CB0B44 /* PacketTunnel */,
+				240B33C221888F7F00CB0B44 /* Products */,
+				240B33E9218897A400CB0B44 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		240B33C221888F7F00CB0B44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				240B33C121888F7F00CB0B44 /* iLeaf.app */,
+				240B33DA21888FE600CB0B44 /* PacketTunnel.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		240B33C321888F7F00CB0B44 /* iLeaf */ = {
+			isa = PBXGroup;
+			children = (
+				240B33ED2188980900CB0B44 /* iLeaf.entitlements */,
+				240B33C421888F7F00CB0B44 /* AppDelegate.swift */,
+				240B33C621888F7F00CB0B44 /* ViewController.swift */,
+				240B33C821888F7F00CB0B44 /* Main.storyboard */,
+				240B33CB21888F7F00CB0B44 /* Assets.xcassets */,
+				240B33CD21888F7F00CB0B44 /* LaunchScreen.storyboard */,
+				240B33D021888F7F00CB0B44 /* Info.plist */,
+				240B33E72188907600CB0B44 /* VPNManager.swift */,
+			);
+			path = iLeaf;
+			sourceTree = "<group>";
+		};
+		240B33DB21888FE600CB0B44 /* PacketTunnel */ = {
+			isa = PBXGroup;
+			children = (
+				243B9E182546A97F0001F98B /* site.dat */,
+				24B9C1FB24DEDEB40057293C /* libleaf */,
+				240B33DC21888FE600CB0B44 /* PacketTunnelProvider.swift */,
+				240B33DE21888FE600CB0B44 /* Info.plist */,
+				240B33DF21888FE600CB0B44 /* PacketTunnel.entitlements */,
+				24B9C1FF24DEDF270057293C /* Leaf-Bridging-Header.h */,
+			);
+			path = PacketTunnel;
+			sourceTree = "<group>";
+		};
+		240B33E9218897A400CB0B44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				240B33EA218897A400CB0B44 /* NetworkExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		24B9C1FB24DEDEB40057293C /* libleaf */ = {
+			isa = PBXGroup;
+			children = (
+				243B9E0525469C7A0001F98B /* leaf.h */,
+				243B9E0625469C7A0001F98B /* libleaf.a */,
+			);
+			path = libleaf;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		240B33C021888F7F00CB0B44 /* iLeaf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240B33D321888F7F00CB0B44 /* Build configuration list for PBXNativeTarget "iLeaf" */;
+			buildPhases = (
+				240B33BD21888F7F00CB0B44 /* Sources */,
+				240B33BE21888F7F00CB0B44 /* Frameworks */,
+				240B33BF21888F7F00CB0B44 /* Resources */,
+				240B33E621888FE600CB0B44 /* Embed App Extensions */,
+				240B34252189A99500CB0B44 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				240B33E121888FE600CB0B44 /* PBXTargetDependency */,
+			);
+			name = iLeaf;
+			productName = iLeaf;
+			productReference = 240B33C121888F7F00CB0B44 /* iLeaf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		240B33D921888FE600CB0B44 /* PacketTunnel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 240B33E321888FE600CB0B44 /* Build configuration list for PBXNativeTarget "PacketTunnel" */;
+			buildPhases = (
+				240B33D621888FE600CB0B44 /* Sources */,
+				240B33D721888FE600CB0B44 /* Frameworks */,
+				240B33D821888FE600CB0B44 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PacketTunnel;
+			productName = PacketTunnel;
+			productReference = 240B33DA21888FE600CB0B44 /* PacketTunnel.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		240B33B921888F7F00CB0B44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "";
+				TargetAttributes = {
+					240B33C021888F7F00CB0B44 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					240B33D921888FE600CB0B44 = {
+						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.NetworkExtensions.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 240B33BC21888F7F00CB0B44 /* Build configuration list for PBXProject "iLeaf" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 240B33B821888F7F00CB0B44;
+			productRefGroup = 240B33C221888F7F00CB0B44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				240B33C021888F7F00CB0B44 /* iLeaf */,
+				240B33D921888FE600CB0B44 /* PacketTunnel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		240B33BF21888F7F00CB0B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240B33CF21888F7F00CB0B44 /* LaunchScreen.storyboard in Resources */,
+				240B33CC21888F7F00CB0B44 /* Assets.xcassets in Resources */,
+				240B33CA21888F7F00CB0B44 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240B33D821888FE600CB0B44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				243B9E192546A97F0001F98B /* site.dat in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		240B33BD21888F7F00CB0B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240B33C721888F7F00CB0B44 /* ViewController.swift in Sources */,
+				240B33E82188907600CB0B44 /* VPNManager.swift in Sources */,
+				240B33C521888F7F00CB0B44 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		240B33D621888FE600CB0B44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				240B33DD21888FE600CB0B44 /* PacketTunnelProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		240B33E121888FE600CB0B44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 240B33D921888FE600CB0B44 /* PacketTunnel */;
+			targetProxy = 240B33E021888FE600CB0B44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		240B33C821888F7F00CB0B44 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240B33C921888F7F00CB0B44 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		240B33CD21888F7F00CB0B44 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				240B33CE21888F7F00CB0B44 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		240B33D121888F7F00CB0B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		240B33D221888F7F00CB0B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		240B33D421888F7F00CB0B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iLeaf/iLeaf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = iLeaf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.ios.iLeaf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		240B33D521888F7F00CB0B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iLeaf/iLeaf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = iLeaf/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.ios.iLeaf;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		240B33E421888FE600CB0B44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PacketTunnel",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PacketTunnel/libleaf";
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PacketTunnel/libleaf",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.ios.iLeaf.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PacketTunnel/Leaf-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		240B33E521888FE600CB0B44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = PacketTunnel/PacketTunnel.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PacketTunnel",
+				);
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/PacketTunnel/libleaf";
+				INFOPLIST_FILE = PacketTunnel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/PacketTunnel/libleaf",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ileaf.ios.iLeaf.PacketTunnel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/PacketTunnel/Leaf-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		240B33BC21888F7F00CB0B44 /* Build configuration list for PBXProject "iLeaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240B33D121888F7F00CB0B44 /* Debug */,
+				240B33D221888F7F00CB0B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240B33D321888F7F00CB0B44 /* Build configuration list for PBXNativeTarget "iLeaf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240B33D421888F7F00CB0B44 /* Debug */,
+				240B33D521888F7F00CB0B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		240B33E321888FE600CB0B44 /* Build configuration list for PBXNativeTarget "PacketTunnel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				240B33E421888FE600CB0B44 /* Debug */,
+				240B33E521888FE600CB0B44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 240B33B921888F7F00CB0B44 /* Project object */;
+}
