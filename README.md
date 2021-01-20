@@ -27,3 +27,15 @@ The app has no UIs and the switch is the only button to start and stop the proxy
 4. Edit the config `conf` in `PacketTunnel/PacketTunnelProvider.swift`, examples can be found [here](https://github.com/eycorsican/leaf/blob/master/README.zh.md#conf)
 
 5. Build and Run
+
+### View Logs
+
+Leaf by default outputs logs to the console, since it's a static library used by the NetworkExtension executable, you can checkout the logs on macOS via the `Console.app`.
+
+While using the `Console.app` is the easiest way, my favorite is using the command
+
+```sh
+idevicesyslog -p PacketTunnel
+```
+
+You may install it via Homebrew, see https://libimobiledevice.org/ for more details.
