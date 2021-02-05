@@ -19,6 +19,7 @@
 		240B33EC2188980900CB0B44 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B33EA218897A400CB0B44 /* NetworkExtension.framework */; };
 		243B9E0725469C7A0001F98B /* libleaf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 243B9E0625469C7A0001F98B /* libleaf.a */; };
 		243B9E192546A97F0001F98B /* site.dat in Resources */ = {isa = PBXBuildFile; fileRef = 243B9E182546A97F0001F98B /* site.dat */; };
+		24CBABF525CE0D040063C7F9 /* geo.mmdb in Resources */ = {isa = PBXBuildFile; fileRef = 24CBABF425CE0D040063C7F9 /* geo.mmdb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 		243B9E0625469C7A0001F98B /* libleaf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleaf.a; sourceTree = "<group>"; };
 		243B9E182546A97F0001F98B /* site.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = site.dat; sourceTree = "<group>"; };
 		24B9C1FF24DEDF270057293C /* Leaf-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Leaf-Bridging-Header.h"; sourceTree = "<group>"; };
+		24CBABF425CE0D040063C7F9 /* geo.mmdb */ = {isa = PBXFileReference; lastKnownFileType = file; path = geo.mmdb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				243B9E182546A97F0001F98B /* site.dat */,
+				24CBABF425CE0D040063C7F9 /* geo.mmdb */,
 				24B9C1FB24DEDEB40057293C /* libleaf */,
 				240B33DC21888FE600CB0B44 /* PacketTunnelProvider.swift */,
 				240B33DE21888FE600CB0B44 /* Info.plist */,
@@ -270,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				243B9E192546A97F0001F98B /* site.dat in Resources */,
+				24CBABF525CE0D040063C7F9 /* geo.mmdb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

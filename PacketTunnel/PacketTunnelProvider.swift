@@ -2,6 +2,7 @@ import NetworkExtension
 
 let appGroup = "group.com.ileaf.ios.iLeaf"
 
+// See https://github.com/eycorsican/leaf/blob/master/README.zh.md#conf for more conf examples.
 let conf = """
 [General]
 loglevel = trace
@@ -14,6 +15,7 @@ vmess-out = vmess, domain.com, 443, username=9bb8c108-3d92-4dfb-b557-7ff2a2b8d06
 
 [Rule]
 EXTERNAL, site:cn, Direct
+EXTERNAL, mmdb:cn, Direct
 FINAL, vmess-out
 """
 
