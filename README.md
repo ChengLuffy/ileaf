@@ -10,7 +10,7 @@ The app has no UIs and the switch is the only button to start and stop the proxy
 
 ### Build & Run
 
-1. Fix `Bundle Identifier` and `App Groups` identifier and entitilements.
+1. Fix `Bundle Identifier` and `App Groups` identifier and entitlements.
 
 2. Download `leaf` library:
 
