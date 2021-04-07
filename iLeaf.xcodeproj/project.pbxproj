@@ -17,6 +17,7 @@
 		240B33E82188907600CB0B44 /* VPNManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 240B33E72188907600CB0B44 /* VPNManager.swift */; };
 		240B33EB218897A400CB0B44 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B33EA218897A400CB0B44 /* NetworkExtension.framework */; };
 		240B33EC2188980900CB0B44 /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 240B33EA218897A400CB0B44 /* NetworkExtension.framework */; };
+		241C5EFA261DC8CE00B3373A /* cacert.pem in Resources */ = {isa = PBXBuildFile; fileRef = 241C5EF9261DC8CE00B3373A /* cacert.pem */; };
 		243B9E0725469C7A0001F98B /* libleaf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 243B9E0625469C7A0001F98B /* libleaf.a */; };
 		243B9E192546A97F0001F98B /* site.dat in Resources */ = {isa = PBXBuildFile; fileRef = 243B9E182546A97F0001F98B /* site.dat */; };
 		24CBABF525CE0D040063C7F9 /* geo.mmdb in Resources */ = {isa = PBXBuildFile; fileRef = 24CBABF425CE0D040063C7F9 /* geo.mmdb */; };
@@ -71,6 +72,7 @@
 		240B33E72188907600CB0B44 /* VPNManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VPNManager.swift; sourceTree = "<group>"; };
 		240B33EA218897A400CB0B44 /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		240B33ED2188980900CB0B44 /* iLeaf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iLeaf.entitlements; sourceTree = "<group>"; };
+		241C5EF9261DC8CE00B3373A /* cacert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cacert.pem; sourceTree = "<group>"; };
 		243B9E0525469C7A0001F98B /* leaf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = leaf.h; sourceTree = "<group>"; };
 		243B9E0625469C7A0001F98B /* libleaf.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleaf.a; sourceTree = "<group>"; };
 		243B9E182546A97F0001F98B /* site.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = site.dat; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				243B9E182546A97F0001F98B /* site.dat */,
+				241C5EF9261DC8CE00B3373A /* cacert.pem */,
 				24CBABF425CE0D040063C7F9 /* geo.mmdb */,
 				24B9C1FB24DEDEB40057293C /* libleaf */,
 				240B33DC21888FE600CB0B44 /* PacketTunnelProvider.swift */,
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				241C5EFA261DC8CE00B3373A /* cacert.pem in Resources */,
 				243B9E192546A97F0001F98B /* site.dat in Resources */,
 				24CBABF525CE0D040063C7F9 /* geo.mmdb in Resources */,
 			);

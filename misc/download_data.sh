@@ -12,3 +12,6 @@ cd /tmp && \
 
 cd $WD && \
 	mv /tmp/GeoLite2-Country_20191224/GeoLite2-Country.mmdb PacketTunnel/geo.mmdb
+
+# https://curl.se/docs/caextract.html
+curl -L 'https://curl.se/ca/cacert.pem' > PacketTunnel/cacert.pem

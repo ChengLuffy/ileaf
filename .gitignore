@@ -1,5 +1,6 @@
 PacketTunnel/site.dat
 PacketTunnel/geo.mmdb
+PacketTunnel/cacert.pem
 PacketTunnel/libleaf/leaf.h
 PacketTunnel/libleaf/libleaf.a
 

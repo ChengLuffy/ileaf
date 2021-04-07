@@ -8,15 +8,15 @@ let conf = """
 loglevel = trace
 dns-server = 223.5.5.5, 114.114.114.114
 tun-fd = REPLACE-ME-WITH-THE-FD
+routing-domain-resolve = true
 
 [Proxy]
 Direct = direct
-vmess-out = vmess, domain.com, 443, username=9bb8c108-3d92-4dfb-b557-7ff2a2b8d06d, ws=true, tls=true, ws-path=/v2
-
+Proxy = trojan, server.com, 443, password=123456
 [Rule]
 EXTERNAL, site:cn, Direct
 EXTERNAL, mmdb:cn, Direct
-FINAL, vmess-out
+FINAL, Proxy
 """
 
 class PacketTunnelProvider: NEPacketTunnelProvider {
@@ -31,12 +31,15 @@ class PacketTunnelProvider: NEPacketTunnelProvider {
             } catch {
                 NSLog("fialed to write config file \(error)")
             }
-            let path = url.absoluteString
-            let start = path.index(path.startIndex, offsetBy: 7)
-            let subpath = path[start..<path.endIndex]
+            // The CA is used by OpenSSl.
+            // You may download a CA from https://curl.se/docs/caextract.html
+            var certPath = Bundle.main.executableURL?.deletingLastPathComponent()
+            setenv("SSL_CERT_DIR", certPath?.path, 1)
+            certPath?.appendPathComponent("cacert.pem")
+            setenv("SSL_CERT_FILE", certPath?.path, 1)
             DispatchQueue.global(qos: .userInteractive).async {
                 signal(SIGPIPE, SIG_IGN)
-                run_leaf(String(subpath))
+                run_leaf(url.path)
             }
             completionHandler(nil)
         }
